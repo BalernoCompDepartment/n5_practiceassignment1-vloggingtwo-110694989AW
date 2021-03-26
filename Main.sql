@@ -12,7 +12,13 @@ Implement the SQL statement that will output usernames and videoNames from the V
 
 Place a screen shot of the SQL statement and the output from the query after it has been implemented here. Leave the SQL in the repl.it and answer part ii bellow it.*/
 
+select Vlogger.username, video.videoName
+from Vlogger, video
+where Vlogger.vloggerID = video.vloggerID AND video.rating > 3
 
+
+delete from video 
+where videoID = 3
 
 
 /*ii. One of the videos called “Slime” contains a recipe for slime which does not work. It should be removed from the database.
